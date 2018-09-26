@@ -1,0 +1,37 @@
+p{
+  color: red;
+}
+
+
+/* si la fenêtre fait au plus 1024px de large */
+@media all and (max-width: 1024px){
+  .blueText{
+    color: navy;
+  }
+}
+/* Pour faire disparaitre mes éléments sur mobiles j'utilise la media querie "max-device-width" */
+@media all and (max-device-width: 480px){
+  .hide{
+    display: none;
+  }
+}
+/* Nouvelles règles si la fenêtre fait au moins 920px de large */
+@media screen and (min-width: 920px){
+  h1{
+    background-color: lightblue;
+  }
+}
+/* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 360px et 1280px */
+@media screen and (min-width: 360px) and (max-width: 1280px){
+  body{
+    background-color: lightgrey;
+  }
+}
+@media screen and (max-width: 920px){
+  img{
+    display: block;
+  }
+}
+img{
+  display: none;
+}
